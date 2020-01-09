@@ -6,9 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center_horizontal"
-    android:paddingTop="5dp"
-    android:paddingBottom="5dp">
+    android:gravity="center_horizontal">
+
+    <com.cwd.widgetlibs.widgets.SlideLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kobe"
+            android:scaleType="centerCrop"/>
+    </com.cwd.widgetlibs.widgets.SlideLayout>
 
     <com.cwd.widgetlibs.widgets.CountDownView
         android:id="@+id/count_down_view"
@@ -18,6 +27,7 @@
         app:progressColor="@color/colorAccent"
         app:progressWidth="4dp"
         app:textColor="#FFFF00"
-        app:textSize="26sp"/>
+        app:textSize="26sp"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
