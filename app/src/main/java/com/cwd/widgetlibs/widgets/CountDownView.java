@@ -127,6 +127,9 @@ public class CountDownView extends View implements Runnable {
 
     public void stop(){
         progress = -1;
+        if(handler != null){
+            handler.removeCallbacksAndMessages(null);
+        }
     }
 
     private void reset(){

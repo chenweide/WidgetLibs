@@ -12,11 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/colorAccent">
-        <ImageView
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/kobe"
-            android:scaleType="centerCrop"/>
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/kobe"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/kobe"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
     </com.cwd.widgetlibs.widgets.SlideLayout>
 
     <com.cwd.widgetlibs.widgets.CountDownView
