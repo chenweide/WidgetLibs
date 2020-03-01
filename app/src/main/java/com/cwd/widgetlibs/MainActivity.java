@@ -7,10 +7,13 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.cwd.widgetlibs.widgets.CountDownView;
+import com.cwd.widgetlibs.widgets.HeartView;
 
 public class MainActivity extends AppCompatActivity {
 
     private CountDownView countDownView;
+    private HeartView heartView;
+    private boolean isChecked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews(){
         countDownView = findViewById(R.id.count_down_view);
         countDownView.setCountDown(5);
+        heartView = findViewById(R.id.heart_view);
     }
 
     public void initListeners(){
@@ -33,5 +37,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         countDownView.start();
+    }
+
+    public void heartViewClick(View view){
+        isChecked = !isChecked;
+        heartView.setChecked(isChecked);
     }
 }

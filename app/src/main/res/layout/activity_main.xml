@@ -12,9 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/colorAccent">
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -30,7 +28,6 @@
                     android:src="@mipmap/kobe"
                     android:scaleType="fitXY"/>
             </LinearLayout>
-        </HorizontalScrollView>
 
     </com.cwd.widgetlibs.widgets.SlideLayout>
 
@@ -39,10 +36,17 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:bgColor="#4D000000"
-        app:progressColor="@color/colorAccent"
+        app:progressColor="#8A2BE2"
         app:progressWidth="4dp"
         app:textColor="#FFFF00"
         app:textSize="26sp"
         android:layout_marginTop="10dp"/>
+
+    <com.cwd.widgetlibs.widgets.HeartView
+        android:id="@+id/heart_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="heartViewClick"/>
 
 </LinearLayout>
