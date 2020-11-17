@@ -23,6 +23,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 倒计时控件
+ */
 public class CountDownView extends View implements Runnable {
 
     public static final int PROGRESS_MARGIN = 15;

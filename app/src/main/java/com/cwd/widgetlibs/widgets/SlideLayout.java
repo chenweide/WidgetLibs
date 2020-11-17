@@ -21,6 +21,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * 左滑触发事件容器
+ */
 public class SlideLayout extends LinearLayout {
 
     private Paint paint;
