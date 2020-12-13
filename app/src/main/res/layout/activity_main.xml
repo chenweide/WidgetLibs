@@ -53,6 +53,6 @@
         android:id="@+id/btn_global_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="应用内全局消息通知"/>
+        android:text="应用内全局队列消息通知"/>
 
 </LinearLayout>
